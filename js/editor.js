@@ -54,7 +54,8 @@ publishBtn.addEventListener('click', () => {
         }
         const docName = `${blogTitle}-${id}`;
         const date = new Date();
-        db.collection('blogs').doc(docName).set({
+
+        db.collection("blogs").doc(docName).set({
             title: blogTitleField.value,
             article: articleField.value,
             banner: bannerPath,

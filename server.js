@@ -22,6 +22,9 @@ app.get('/blog', (req,res ) => {
 app.use((req,res) => {
     res.json("404");
 })
+app.listen(3000, () => {
+    console.log('listening on port 3000')
+})
 
 
 app.post('/upload', (req, res) => {
@@ -42,7 +45,5 @@ app.post('/upload', (req, res) => {
         }
     })
 
-    app.listen(3000, () => {
-        console.log('listening on port 3000')
-    })
+   
 })
